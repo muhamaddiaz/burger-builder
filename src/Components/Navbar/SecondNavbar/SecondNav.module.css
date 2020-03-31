@@ -1,0 +1,46 @@
+.SecondNavbar {
+    display: flex;
+    background-color: white;
+    padding: 20px 27px 15px;
+}
+
+.SecondNavbar a {
+    color: #F55F81;
+    transition-duration: .2s;
+    opacity: .5;
+    font-size: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.SecondNavbar a.Active {
+    position: relative;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.SecondNavbar a.Active::before {
+    content: "";
+    position: absolute;
+    animation-name: growRightAnim;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    transform-origin: left;
+    animation-timing-function: ease-out;
+    width: 25px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #F55F81;
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes growRightAnim {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}

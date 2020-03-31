@@ -1,12 +1,24 @@
-import React, { useContext } from 'react'
+import React from 'react'
 
-import AppContext from '../../Contexts/AppContext'
+import classes from './Navbar.module.css'
+
+import { FaShoppingCart } from 'react-icons/fa'
+import SecondNavbar from "./SecondNavbar/SecondNavbar";
 
 const Navbar = () => {
-    const appContext = useContext(AppContext);
+    const buttonClasses = [classes.CheckoutButton, classes.Active];
 
     return (
-        <h1>{appContext.cart}</h1>
+        <React.Fragment>
+            <div className={classes.Navbar}>
+                <h1>StackFood</h1>
+                <button className={buttonClasses.join(" ")}>
+                    <FaShoppingCart />
+                </button>
+            </div>
+            <SecondNavbar />
+        </React.Fragment>
+
     )
 };
 
