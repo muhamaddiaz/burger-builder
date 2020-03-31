@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="678497fd-7c76-4095-99c1-fb6c7094631c" name="Default Changelist" comment="Added Navbar (presentational)">
-      <change afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Navbar/SecondNavbar/SecondNav.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Navbar/SecondNavbar/SecondNavbar.jsx" afterDir="false" />
+    <list default="true" id="678497fd-7c76-4095-99c1-fb6c7094631c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Burger/Burger.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Burger/Burger.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/Bottom_Bread.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/Cheese.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/Cheese_View.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/Meat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/Salad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/Salad_View.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/Top_Bread.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Navbar/SecondNavbar/SecondNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar/SecondNavbar/SecondNavbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/Maker/Maker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Maker/Maker.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +108,7 @@
       <updated>1585463500877</updated>
       <workItem from="1585463502536" duration="6635000" />
       <workItem from="1585527023183" duration="8156000" />
-      <workItem from="1585631640378" duration="8467000" />
+      <workItem from="1585631640378" duration="11141000" />
     </task>
     <task id="LOCAL-00001" summary="initial config with context (appContext, makerContext)">
       <created>1585650296419</created>
@@ -114,11 +124,29 @@
       <option name="project" value="LOCAL" />
       <updated>1585650361868</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Navbar (presentational)">
+      <created>1585657149395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585657149395</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial config with context (appContext, makerContext)" />
@@ -136,10 +164,14 @@
       <screen x="42" y="23" width="1398" height="877" />
     </state>
     <state x="647" y="408" key="#com.intellij.ide.util.TreeDirectoryChooserDialog/42.23.1398.877/-264.-1057.1920.1057@42.23.1398.877" timestamp="1585477970821" />
-    <state x="122" y="23" key="CommitChangelistDialog2" timestamp="1585657116678">
+    <state x="479" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585659624291">
       <screen x="42" y="23" width="1398" height="877" />
     </state>
-    <state x="122" y="23" key="CommitChangelistDialog2/42.23.1398.877/-264.-1057.1920.1057@42.23.1398.877" timestamp="1585657116678" />
+    <state x="479" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/42.23.1398.877/-264.-1057.1920.1057@42.23.1398.877" timestamp="1585659624291" />
+    <state x="122" y="23" key="CommitChangelistDialog2" timestamp="1585657149228">
+      <screen x="42" y="23" width="1398" height="877" />
+    </state>
+    <state x="122" y="23" key="CommitChangelistDialog2/42.23.1398.877/-264.-1057.1920.1057@42.23.1398.877" timestamp="1585657149228" />
     <state x="417" y="-938" width="1198" height="677" key="DiffContextDialog" timestamp="1585500138048">
       <screen x="-264" y="-1057" width="1920" height="1057" />
     </state>
@@ -169,9 +201,13 @@
       <screen x="42" y="23" width="1398" height="877" />
     </state>
     <state x="329" y="203" key="IDE.errors.dialog/42.23.1398.877/-264.-1057.1920.1057@42.23.1398.877" timestamp="1585550254943" />
-    <state x="406" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1585655431312">
+    <state x="406" y="211" width="670" height="675" key="run.anything.popup" timestamp="1585657981348">
       <screen x="42" y="23" width="1398" height="877" />
     </state>
-    <state x="406" y="213" width="670" height="676" key="search.everywhere.popup/42.23.1398.877/-264.-1057.1920.1057@42.23.1398.877" timestamp="1585655431312" />
+    <state x="406" y="211" width="670" height="675" key="run.anything.popup/42.23.1398.877/-264.-1057.1920.1057@42.23.1398.877" timestamp="1585657981348" />
+    <state x="406" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1585657988013">
+      <screen x="42" y="23" width="1398" height="877" />
+    </state>
+    <state x="406" y="213" width="670" height="676" key="search.everywhere.popup/42.23.1398.877/-264.-1057.1920.1057@42.23.1398.877" timestamp="1585657988013" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import MakerContext from "../../Contexts/MakerContext";
+import Burger from "../../Components/Burger/Burger";
 
 const Maker = () => {
     return (
@@ -9,7 +10,7 @@ const Maker = () => {
             cost: 0,
             pieces: 0
         }}>
-            <h1>Hello Maker</h1>
+            <Burger />
         </MakerContext.Provider>
     )
 };

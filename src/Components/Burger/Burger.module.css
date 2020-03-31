@@ -1,0 +1,12 @@
+.Burger {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 27px;
+}
+
+.Burger img {
+    margin: 2px;
+    width: 75%;
+}
