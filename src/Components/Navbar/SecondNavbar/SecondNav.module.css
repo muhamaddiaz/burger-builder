@@ -2,13 +2,14 @@
     display: flex;
     background-color: white;
     padding: 20px 27px 15px;
+    padding-top: 100px;
 }
 
 .SecondNavbar a {
     color: #F55F81;
     transition-duration: .2s;
     opacity: .5;
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 20px;
     text-decoration: none;
     padding-bottom: 10px;

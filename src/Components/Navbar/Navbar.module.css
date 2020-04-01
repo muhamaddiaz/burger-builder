@@ -4,6 +4,9 @@
     padding: 30px 27px 22px;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .Navbar h1 {

@@ -10,8 +10,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.9.0",
+    "react-id-swiper": "^3.0.0",
+    "react-lottie": "^1.2.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "swiper": "^5.3.6"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,18 @@
+.Summary {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Summary h3 {
+    margin: 0;
+    font-size: 16px;
+    opacity: 50%;
+}
+
+.Summary h2 {
+    font-size: 28px;
+    color: #F55F81;
+    margin: 0;
+}

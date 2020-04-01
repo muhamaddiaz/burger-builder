@@ -1,0 +1,19 @@
+.Ingridients {
+    width: 100%;
+}
+
+.Ingridients .Information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Ingridients .Information h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #F55F81;
+}
+
+.Ingridients .SlideMenu {
+    margin-top: 5px;
+}

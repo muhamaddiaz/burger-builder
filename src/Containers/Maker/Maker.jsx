@@ -2,6 +2,7 @@ import React from 'react'
 
 import MakerContext from "../../Contexts/MakerContext";
 import Burger from "../../Components/Burger/Burger";
+import MenuEditor from "../../Components/MenuEditor/MenuEditor";
 
 const Maker = () => {
     return (
@@ -11,6 +12,7 @@ const Maker = () => {
             pieces: 0
         }}>
             <Burger />
+            <MenuEditor />
         </MakerContext.Provider>
     )
 };
