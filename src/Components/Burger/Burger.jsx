@@ -2,6 +2,8 @@ import React from 'react'
 
 import classes from './Burger.module.css'
 
+import makerContext from '../../Contexts/MakerContext'
+
 import BreadTopImage from '../../Assets/Top_Bread.png'
 import BreadBottomImage from '../../Assets/Bottom_Bread.png'
 import MeatImage from '../../Assets/Meat.png'
@@ -9,16 +11,18 @@ import SaladImage from '../../Assets/Salad.png'
 import CheeseImage from '../../Assets/Cheese.png'
 
 const Burger = () => {
-    const ingredients = ["salad", "meat", "cheese"];
+    const context = React.useContext(makerContext);
 
-    const burgerGenerated = ingredients.map((ingredient, index) => {
-        if (ingredient === "meat") {
+    console.log(context.burger);
+
+    const burgerGenerated = context.burger.map((ingredient, index) => {
+        if (ingredient === "Meat") {
             return <img src={MeatImage} key={index} alt={"meat"} />
         }
-        if (ingredient === "salad") {
+        if (ingredient === "Salad") {
             return <img src={SaladImage} key={index} alt={"salad"} />
         }
-        if (ingredient === "cheese") {
+        if (ingredient === "Cheese") {
             return <img src={CheeseImage} key={index} alt={"cheese"} />
         }
 

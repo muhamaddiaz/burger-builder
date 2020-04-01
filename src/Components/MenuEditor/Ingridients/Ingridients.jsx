@@ -12,7 +12,7 @@ import Ingridient from "./Ingridient/Ingridient";
 
 const params = {
     slidesPerView: 2,
-    spaceBetween: 15,
+    spaceBetween: 5,
 };
 
 const items = [
@@ -35,7 +35,6 @@ const Ingridients = () => {
         <div key={index}>
             <Ingridient {...item} />
         </div>
-
     ));
 
     return (
