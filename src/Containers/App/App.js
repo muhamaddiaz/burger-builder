@@ -6,6 +6,7 @@ import classes from './App.module.css';
 import * as loadingAnimation from '../../Assets/loading.json'
 
 import AppContext from '../../Contexts/AppContext'
+import MakerContext from "../../Contexts/MakerContext";
 
 import Navbar from '../../Components/Navbar/Navbar'
 import Maker from "../Maker/Maker";
@@ -21,12 +22,34 @@ const defaultOptions = {
 
 function App() {
     const [loading, setLoading] = React.useState(true);
+    const [burger, setBurger] = React.useState([]);
+    const [cost, setCost] = React.useState(0);
+    const [pieces, setPieces] = React.useState(1);
 
     React.useEffect(() => {
         setTimeout(() => {
             setLoading(false)
         }, 1000)
     }, [loading]);
+
+    const addIngredient = (value) => {
+        setBurger([...burger, value])
+    };
+    const removeIngredient = (value) => {
+        let hasOne = true;
+
+        setBurger(burger.filter((b) => {
+            if (b === value && hasOne) {
+                hasOne = false;
+                return false
+            }
+            return true
+        }))
+    };
+
+    const setPiece = (value) => {
+        setPieces(value)
+    };
 
     if ( loading ) {
         return (
@@ -45,12 +68,22 @@ function App() {
     <AppContext.Provider value={{
         cart: ["Hello", "ini", "Context"]
     }}>
+        <MakerContext.Provider value={{
+            burger,
+            cost,
+            pieces,
+            addIngredient,
+            removeIngredient,
+            setCost,
+            setPiece
+        }}>
         <Navbar />
-        <Switch>
-            <Route path={"/"} exact component={Maker}/>
-            <Route path={"/menu"} render={() => (<h1>Menu</h1>)} />
-            <Route path={"/recipe"} render={() => (<h1>Recipe</h1>)} />
-        </Switch>
+            <Switch>
+                <Route path={"/"} exact component={Maker}/>
+                <Route path={"/menu"} render={() => (<h1>Menu</h1>)} />
+                <Route path={"/recipe"} render={() => (<h1>Recipe</h1>)} />
+            </Switch>
+        </MakerContext.Provider>
     </AppContext.Provider>
   );
 }

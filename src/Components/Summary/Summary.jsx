@@ -1,9 +1,9 @@
 import React from 'react'
+import _ from "lodash";
 
 import makerContext from '../../Contexts/MakerContext'
 
 import classes from './Summary.module.css'
-import _ from "lodash";
 
 const Summary = () => {
     const context = React.useContext(makerContext);
@@ -25,9 +25,9 @@ const Summary = () => {
             sumMeat = ingredientTotal["Meat"] * 3;
         }
 
-        return (sumSalad + sumCheese + sumMeat);
+        return (sumSalad + sumCheese + sumMeat) * context.pieces;
     };
-
+    
     return (
         <div className={classes.Summary}>
             <h3>Total</h3>

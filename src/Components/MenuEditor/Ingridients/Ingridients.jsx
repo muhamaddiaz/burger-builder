@@ -41,7 +41,7 @@ const Ingridients = () => {
         <div className={classes.Ingridients}>
             <div className={classes.Information}>
                 <h2>Ingredients</h2>
-                <FaChevronRight style={{color: "red"}} />
+                <FaChevronRight style={{color: "#F55F81"}} />
             </div>
             <div className={classes.SlideMenu}>
                 <Swiper {...params}>

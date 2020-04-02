@@ -16,4 +16,4 @@ const MenuEditor = () => {
     )
 };
 
-export default MenuEditor
+export default React.memo(MenuEditor)
