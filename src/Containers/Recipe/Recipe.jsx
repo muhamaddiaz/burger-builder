@@ -1,10 +1,9 @@
 import React from 'react'
-import {motion} from 'framer-motion'
 
-import Burger from "../../Components/Burger/Burger";
-import MenuEditor from "../../Components/MenuEditor/MenuEditor";
+import classes from './Recipe.module.css'
+import {motion} from "framer-motion";
 
-const Maker = () => {
+const Recipe = () => {
     return (
         <motion.div
             initial={{opacity: 0}}
@@ -13,11 +12,11 @@ const Maker = () => {
                 duration: 0.2
             }}
             exit={{opacity: 0}}
+            className={classes.Recipe}
         >
-            <Burger />
-            <MenuEditor />
+            <h1>Recipe</h1>
         </motion.div>
     )
 };
 
-export default Maker
+export default Recipe

@@ -18,7 +18,7 @@ const Basket = () => {
 
     return (
         <div className={classes.Basket}>
-            {modal && <SumModal toggleModal={toggleModal} />}
+            <SumModal toggleModal={toggleModal} isShow={modal} />
             <button className={classes.Bag}><FaShoppingCart /> Add to bag</button>
             <button className={classes.Multi} onClick={toggleModal}>{context.pieces}</button>
         </div>

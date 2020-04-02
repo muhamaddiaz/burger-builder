@@ -1,6 +1,7 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom'
 import Lottie from 'react-lottie'
+import {AnimatePresence} from 'framer-motion'
 
 import classes from './App.module.css';
 import * as loadingAnimation from '../../Assets/loading.json'
@@ -10,6 +11,8 @@ import MakerContext from "../../Contexts/MakerContext";
 
 import Navbar from '../../Components/Navbar/Navbar'
 import Maker from "../Maker/Maker";
+import Menu from '../Menu/Menu'
+import Recipe from "../Recipe/Recipe";
 
 const defaultOptions = {
     loop: true,
@@ -77,12 +80,16 @@ function App() {
             setCost,
             setPiece
         }}>
-        <Navbar />
-            <Switch>
-                <Route path={"/"} exact component={Maker}/>
-                <Route path={"/menu"} render={() => (<h1>Menu</h1>)} />
-                <Route path={"/recipe"} render={() => (<h1>Recipe</h1>)} />
-            </Switch>
+            <div className={classes.App}>
+                <Navbar />
+                <AnimatePresence>
+                    <Switch>
+                        <Route path={"/"} exact component={Maker}/>
+                        <Route path={"/menu"} component={Menu} />
+                        <Route path={"/recipe"} component={Recipe} />
+                    </Switch>
+                </AnimatePresence>
+            </div>
         </MakerContext.Provider>
     </AppContext.Provider>
   );

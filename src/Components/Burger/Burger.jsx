@@ -39,4 +39,4 @@ const Burger = () => {
     )
 };
 
-export default Burger
+export default React.memo(Burger)
